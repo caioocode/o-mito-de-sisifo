@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+/* fontes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* root */
+:root {
+    --fonte1: 'Montserrat', sans-serif;
+}
+/* configuração de fundo */
+* {
+    margin: 0px;
+    padding: 0px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-size: 5vw;
+    font-weight: bolder;
+    /* font-variant: small-caps; */
+
+}
+
+header > p{
+    font-weight: lighter;
+    padding-bottom: 15px;
+
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 1.5em;
+    font-size: 1.8vw;
+    text-align: justify;
+}
+
+section > p {
+    padding-bottom: 2em;
+
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+
+}
+
+section.imagem {
+    background-color: black;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    box-shadow: inset 12px 16px 11px 8px rgba(37, 37, 37, 0.486);
+}
+
+section.imagem p {
+    color: white;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.514);
+    text-shadow: 1px 1px 0px black;
+    padding: 5px;
+}
+
+section#img01 {
+    background-image: url('imagens/albert-camus.jpg');
+    background-position: center;
+}
+
+section#img02 {
+    background-image: url('imagens/sisifo.jpg');
+    background-position: center;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
